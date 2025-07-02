@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaheshCartoonClub - Fun Learning for Kids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes rainbow {
+            0% {color: #ff0000;}
+            14% {color: #ff7f00;}
+            28% {color: #ffff00;}
+            42% {color: #00ff00;}
+            57% {color: #0000ff;}
+            71% {color: #4b0082;}
+            85% {color: #9400d3;}
+            100% {color: #ff0000;}
+        }
+        .rainbow-text {
+            animation: rainbow 4s linear infinite;
+        }
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .moving-bg {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+    <header class="moving-bg text-white py-6 px-4 shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">
+                <span class="rainbow-text">MaheshCartoonClub</span>
+            </h1>
+            <p class="text-xl">Fun Learning Adventures for Little Explorers!</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- Video Player Section -->
+        <section class="mb-12">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden max-w-4xl mx-auto">
+                <div class="relative pt-[56.25%] bg-gray-200">
+                    <img src="https://placehold.co/1280x720" alt="Animated classroom scene with colorful letters and numbers floating around a cheerful cartoon teacher" class="absolute top-0 left-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="bg-red-600 hover:bg-red-700 text-white rounded-full p-6 shadow-lg transform hover:scale-110 transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-gray-800">Learning ABCs with Funny Cartoons</h2>
+                    <p class="text-gray-600 mb-4">Join Mr. Alphabet on a fun journey through the ABCs! Sing along and learn!</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/60x60" alt="Cartoon owl teacher with glasses holding a book" class="rounded-full mr-3">
+                            <span class="font-semibold">MaheshCartoonClub</span>
+                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                            </svg>
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Cards Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">More Fun Learning Videos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover">
+                    <img src="https://placehold.co/600x400" alt="Colorful numbers dancing with cartoon animals in a meadow" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Counting with Animals</h3>
+                        <p class="text-gray-600 mb-3">Learn to count from 1 to 10 with our funny animal friends!</p>
+                        <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full">Watch Now</button>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover">
+                    <img src="https://placehold.co/600x400" alt="Cartoon shapes transforming into different objects like houses and cars" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Shapes Around Us</h3>
+                        <p class="text-gray-600 mb-3">Discover shapes in everyday objects with Sammy Square!</p>
+                        <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-full">Watch Now</button>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 card-hover">
+                    <img src="https://placehold.co/600x400" alt="Cartoon jungle scene with animals displaying different emotions" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Feelings Safari</h3>
+                        <p class="text-gray-600 mb-3">Explore emotions with our jungle animal pals!</p>
+                        <button class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-full">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Learning Section -->
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Fun Learning Activities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 rounded-xl p-6">
+                    <h3 class="text-xl font-bold mb-4 text-blue-800 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        Quiz Time!
+                    </h3>
+                    <p class="mb-4">Test what you've learned with our fun quizzes!</p>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full flex items-center">
+                        Try Quiz
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="bg-green-50 rounded-xl p-6">
+                    <h3 class="text-xl font-bold mb-4 text-green-800 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18s-3.332.477-4.5 1.253" />
+                        </svg>
+                        Story Time
+                    </h3>
+                    <p class="mb-4">Enjoy our educational stories with moral lessons!</p>
+                    <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center">
+                        Read Story
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl shadow-xl p-8 text-white text-center">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to MaheshCartoonClub!</h2>
+            <p class="text-xl mb-6">Get notified when we upload new fun learning videos!</p>
+            <div class="max-w-md mx-auto">
+                <div class="flex">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-800">
+                    <button class="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold px-6 py-3 rounded-r-lg">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="mt-2 text-sm text-purple-100">We'll never share your email. Pinky promise!</p>
+            </div>
+            <div class="mt-6 flex justify-center space-x-6">
+                <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                    YouTube
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold flex items-center">
+                        <span class="text-yellow-400">M</span>ahesh<span class="text-yellow-400">C</span>artoon<span class="text-yellow-400">C</span>lub
+                    </h2>
+                    <p class="mt-2 text-gray-400">Making learning fun for kids!</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                        Home
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                        Videos
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                        About
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors">
+                        Contact
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 text-center text-gray-400 text-sm">
+                <p>© 2023 MaheshCartoonClub. All rights reserved.</p>
+                <p class="mt-1">Designed with ❤️ for kids' education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple interactive elements for kids
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make all buttons play a sound when clicked
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Play a fun sound (this would be replaced with actual sound files)
+                    console.log("Playing fun sound!");
+                    
+                    // Add visual feedback
+                    this.classList.add('transform', 'scale-95');
+                    setTimeout(() => {
+                        this.classList.remove('transform', 'scale-95');
+                    }, 150);
+                });
+            });
+
+            // Simple animation for educational cards
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.3s ease';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
